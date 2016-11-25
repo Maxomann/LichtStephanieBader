@@ -1,0 +1,15 @@
+
+# Created by https://www.gitignore.io/api/visualstudiocode,jekyll
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-metadata
