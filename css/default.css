@@ -1,21 +1,31 @@
 body {
     margin-top: 51px;
     font-family: Berthold Akzidenz-Grotesk;
+    color: #9f9f9f;
 }
 
 .navbar {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.navbar-brand{
+    transform: translateY(-3px);
+}
 
 .banner-small {
     width: 100%;
-    height: 160px;
+    min-height: 160px;
     background-color: #d74919;
 }
 
 .banner-medium {
     width: 100%;
-    height: 500px;
+    min-height: 400px;
+    background-color: #d74919;
+}
+
+.banner-large {
+    width: 100%;
+    min-height: 500px;
     background-color: #d74919;
 }
 
@@ -24,10 +34,189 @@ body {
     padding: 0;
 }
 
+#landing-overlay {
+    position: relative;
+    height: 100%;
+    background-color: #d74919;
+}
+#landing-overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 100%;
+}
+
 #landing-nav {
     overflow: hidden;
     background-image: url(../assets/t.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    padding: 0;
+}
+#landing-nav>div {
+    min-height: 500px;
+    max-width: 550px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+@media (min-width: 1200px) {
+    #landing-nav>div {
+        max-width: 100%;
+    }
+}
+.main-navitem {
+    width: 130px;
+    height: 156px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+@media (min-width: 370px) {
+    .main-navitem {
+        margin: 15px;
+    }
+}
+@media (min-width: 500px) {
+    .main-navitem {
+        width: 150px;
+        height: 180px;
+    }
+}
+@media (min-width: 768px) {
+    .main-navitem {
+        width: 200px;
+        height: 240px;
+    }
+    .main-navitem:nth-child(1) {
+        margin-top: 40px;
+    }
+    .main-navitem:nth-child(2) {
+        margin-top: 40px;
+    }
+    .main-navitem:nth-child(3) {
+        margin-bottom: 40px;
+    }
+    .main-navitem:nth-child(4) {
+        margin-bottom: 40px;
+    }
+}
+@media (min-width: 1200px) {
+    .main-navitem:nth-child(1) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .main-navitem:nth-child(2) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .main-navitem:nth-child(3) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .main-navitem:nth-child(4) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+.main-navitem a {
+    color: #9f9f9f;
+}
+.main-navitem a:hover {
+    color: #7D7D7D;
+}
+.main-navitem div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+.main-navitem div>p {
+    position: absolute;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+
+    bottom: 10px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (min-width: 500px) {
+    .main-navitem div>p {
+        font-size: 16px;
+    }
+}
+@media (min-width: 768px) {
+    .main-navitem div>p {
+        font-size: 18px;
+    }
+}
+@media (min-width: 1200px) {
+    .main-navitem div>p {
+        font-size: 20px;
+    }
+}
+.main-navitem div>img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 60%;
+    margin-top: 5%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+footer {
+    position: relative;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+footer>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer_logo {
+    width: 350px;
+    max-width: 100%;
+}
+
+#footer_info {
+    transform: translateX(4px);
+    width: 278px;
+    margin:auto;
+    margin-top: 50px;
+}
+
+#footer_links {
+    text-align: center;
+    margin-top: 80px;
+}
+@media (min-width: 768px) {
+    #footer_info {
+        transform: translateX(0);
+        text-align: left;
+        margin-left: 78px;
+    }
+    #footer_links {
+        text-align: left;
+        margin-left: 78px;
+    }
+}
+@media (min-width: 992px) {
+    #footer_links {
+        margin-top: 184px;
+        margin-left: 140px;
+    }
 }
