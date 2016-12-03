@@ -5,7 +5,7 @@ content_description:
 robot_tags:
 ---
 
-#Leuchten#
+# Leuchten
 
 ![alt text](assets/demo.jpg "Logo Title Text 1")
 
