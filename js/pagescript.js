@@ -13,7 +13,9 @@ function scrollToElement(element){
 }
 
 function initAnimateLogo() {
-    if(document.getElementById('landing-overlay') !== undefined) {
+    var overlay = document.getElementById('landing-overlay');
+    console.log(overlay);
+    if(overlay !== null) {
         var animationSteps = document.getElementsByClassName('landing-overlay-image');
         var arrow = document.getElementById('landing-arrow-down');
         if(animationSteps.length !== 3){
