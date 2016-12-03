@@ -14,17 +14,17 @@ function scrollToElement(element){
 
 function initAnimateLogo() {
     if(document.getElementById('landing-overlay') !== undefined) {
-        var animatonSteps = document.getElementsByClassName('landing-overlay-image');
+        var animationSteps = document.getElementsByClassName('landing-overlay-image');
         var arrow = document.getElementById('landing-arrow-down');
-        if(animatonSteps.length !== 3){
+        if(animationSteps.length !== 3){
             console.log("error: animationSteps.length = " + animationSteps.length.toString());
         }
         window.setTimeout(function(){
-            animatonSteps[0].style.opacity = 1;
+            animationSteps[0].style.opacity = 1;
             window.setTimeout(function(){
-                animatonSteps[1].style.opacity = 1;
+                animationSteps[1].style.opacity = 1;
                 window.setTimeout(function(){
-                    animatonSteps[2].style.opacity = 1;
+                    animationSteps[2].style.opacity = 1;
                     window.setTimeout(function(){
                         arrow.style.opacity = 1;
                     }, 1800);
