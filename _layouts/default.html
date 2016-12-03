@@ -1,9 +1,13 @@
 {% include html_start.html %}
 
     <div id="landing-overlay">
-        <img id="landing-overlay-image" src="assets/LichtStephanieBaderLogo-Weiss.png">
+        <img class="landing-overlay-image" src="assets/animation/logo-frame0.png">
+        <img class="landing-overlay-image" src="assets/animation/logo-frame1.png">
+        <img class="landing-overlay-image" src="assets/animation/logo-frame2.png">
+        <img id="landing-arrow-down" onclick="scrollToElement($('#landing-main'))" src="assets/icons/down-arrow.svg">
     </div>
 
+    <div id="landing-main"></div>
     <div class="container-fluid banner-small"></div>
     <!-- {% include pagecontent.html %} -->
     <div id="landing-nav" class="container-fluid banner-large">
