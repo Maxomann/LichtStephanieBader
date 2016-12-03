@@ -39,13 +39,31 @@ body {
     height: 100%;
     background-color: #d74919;
 }
-#landing-overlay-image {
+.landing-overlay-image {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.90);
     width: 500px;
     max-width: 100%;
+    opacity: 0;
+    transition:opacity 1.4s linear;
+}
+@media (min-width: 768px) {
+    .landing-overlay-image {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+#landing-arrow-down {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    max-width: 100%;
+    opacity: 0;
+    transition:opacity 1.5s linear;
+    cursor: pointer;
 }
 
 #landing-nav {
@@ -178,6 +196,9 @@ footer {
     position: relative;
     color: #ffffff;
     font-weight: 300;
+}
+footer a {
+    color: #ffffff;
 }
 
 footer>div {
