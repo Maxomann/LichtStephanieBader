@@ -4,6 +4,12 @@ body {
     color: #9f9f9f;
 }
 
+h1 {
+    text-align: center;
+    font-weight: 300;
+    margin: 50px auto 50px auto;
+}
+
 .navbar {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -240,4 +246,43 @@ footer>div {
         margin-top: 184px;
         margin-left: 140px;
     }
+}
+
+/* Lecuhten */
+#leuchtenquickref {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.lighttable {
+    width: 100%;
+    margin-top: 100px;
+}
+.lighttable .row>* {
+    padding: 30px;
+}
+.lighttable .row div:first-child p:first-child {
+    font-weight: 500;
+}
+.lighttable .row {
+    margin-bottom: 40px;
+    vertical-align: middle;
+}
+.lighttable .row div{
+    min-height: 60px;
+}
+@media (min-width: 992px) {
+    .lighttable .row {
+        margin-bottom: 120px;
+    }
+    .lighttable .row div{
+        min-height: 180px;
+    }
+    .lighttable .addtextmargin {
+        margin-top: 40px;
+    }
+}
+.lighttable .row div img {
+    width: 130px;
+    margin: 10px;
 }

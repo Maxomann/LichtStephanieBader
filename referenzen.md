@@ -1,5 +1,5 @@
 ---
-layout: lichtplanung
+layout: referenzen
 title: Referenzen
 content_description:
 robot_tags:
