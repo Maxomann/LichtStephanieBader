@@ -1,5 +1,5 @@
 ---
-layout: lichtplanung
+layout: leuchten
 title: Leuchten
 content_description:
 robot_tags:
