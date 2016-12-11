@@ -1,0 +1,53 @@
+{% include html_start.html %}
+
+    <div class="container-fluid banner-small"></div>
+    <div class="container">
+        <h1>Kontakt</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="contact-logo" src="assets/LichtStephanieBaderLogo-Hell-darker-350x.png">
+                <p id="contact-info">
+                    Stephanie Bader<br>
+                    Ottersbekallee 21 • 20255 Hamburg<br>
+                    Tel. &nbsp&nbsp040 / 12345678<br>
+                    Fax. &nbsp040 / 12345678<br>
+                    Mail. kontakt@lichtstepahniebader.de
+                </p>
+
+                <iframe class="gmaps" width="400" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxcppClSPsUcRTkoI13yiXs8&key=AIzaSyB-bjDA02AMMT_ofz68BLiQiCPpWNVXP3E" allowfullscreen></iframe>
+                <div class="placeholder-bottom"></div>
+            </div>
+            <div class="col-md-6">
+                <form id="contact-form">
+                    <fieldset>
+                        <legend>Kontaktformular</legend>
+                        <div class="form-group">
+                            <label for="name">Name<span class="redstar">*</span></label><br>
+                            <input class="form-control" type="text" name="name" placeholder="Max Mustermann" required><br>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mail">Email<span class="redstar">*</span></label><br>
+                            <input class="form-control" type="text" name="mail" placeholder="mustermann@gmail.com" required><br>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel">Telefon</label><br>
+                            <input class="form-control" type="text" name="tel" placeholder="+49 40 123456"><br>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nachricht">Nachricht<span class="redstar">*</span></label><br>
+                            <textarea class="form-control" type="text" name="nachricht" placeholder="Hier schreiben..." required></textarea><br>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Senden</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- {% include pagecontent.html %} -->
+
+{% include html_end.html %}

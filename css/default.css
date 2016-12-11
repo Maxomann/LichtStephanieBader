@@ -10,6 +10,10 @@ h1 {
     margin: 50px auto 50px auto;
 }
 
+.placeholder-bottom {
+    height: 100px;
+}
+
 .navbar {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -285,4 +289,45 @@ footer>div {
 .lighttable .row div img {
     width: 130px;
     margin: 10px;
+}
+
+/* Kontakt */
+#contact-logo {
+    max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#contact-form {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.redstar {
+    color: red;
+}
+
+form {
+    font-size: 16px;
+}
+.form-control {
+    font-size: 15px;
+}
+form label {
+    font-weight: 300;
+}
+form textarea {
+    max-width: 100%;
+}
+
+legend {
+    color: inherit;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.gmaps {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
