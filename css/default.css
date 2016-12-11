@@ -2,6 +2,8 @@ body {
     margin-top: 51px;
     font-family: Berthold Akzidenz-Grotesk;
     color: #9f9f9f;
+
+    overflow-x: hidden;
 }
 
 h1 {
