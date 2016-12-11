@@ -1,5 +1,5 @@
 ---
-layout: lichtplanung
+layout: kontakt
 title: Kontakt
 content_description:
 robot_tags:
