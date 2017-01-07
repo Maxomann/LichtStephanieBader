@@ -1,6 +1,6 @@
 ---
 layout: leuchten
-title: Leuchten
+title: Lieblingsleuchten
 content_description:
 robot_tags:
 ---

@@ -1,6 +1,6 @@
 ---
-layout: referenzen
-title: Referenzen
+layout: referenz
+title: Referenz
 content_description:
 robot_tags:
 ---

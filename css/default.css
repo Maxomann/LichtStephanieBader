@@ -236,6 +236,11 @@ footer>div {
     width: 278px;
     margin:auto;
     margin-top: 50px;
+    text-align: center;
+}
+#footer_info a {
+    color: #23527c;
+    text-decoration: underline;
 }
 
 #footer_links {
@@ -254,6 +259,9 @@ footer>div {
     }
 }
 @media (min-width: 992px) {
+    #footer_info {
+        margin-top: 131px;
+    }
     #footer_links {
         margin-top: 184px;
         margin-left: 140px;
