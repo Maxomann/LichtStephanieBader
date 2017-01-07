@@ -54,6 +54,30 @@ h1 {
     padding: 0;
 }
 
+#main-quote>p{
+    font-size: 25px;
+    font-weight: 100;
+
+    font-style: italic;
+    color: #ffffff;
+
+    background-color: red;
+    width: 650px;
+    margin:auto;
+}
+#main-quote>p>span:nth-child(1) {
+
+}
+#main-quote>p>span:nth-child(2) {
+
+}
+#main-quote>p>span:nth-child(3) {
+
+}
+#main-quote>p>span:nth-child(4) {
+
+}
+
 #landing-overlay {
     position: relative;
     height: 100%;
@@ -221,45 +245,6 @@ footer>div {
         margin-top: 184px;
         margin-left: 140px;
     }
-}
-
-/* Lecuhten */
-#leuchtenquickref {
-    text-align: center;
-    margin-top: 60px;
-}
-
-.lighttable {
-    width: 100%;
-    margin-top: 100px;
-}
-.lighttable .row>* {
-    padding: 30px;
-}
-.lighttable .row div:first-child p:first-child {
-    font-weight: 500;
-}
-.lighttable .row {
-    margin-bottom: 40px;
-    vertical-align: middle;
-}
-.lighttable .row div{
-    min-height: 60px;
-}
-@media (min-width: 992px) {
-    .lighttable .row {
-        margin-bottom: 120px;
-    }
-    .lighttable .row div{
-        min-height: 180px;
-    }
-    .lighttable .addtextmargin {
-        margin-top: 40px;
-    }
-}
-.lighttable .row div img {
-    width: 130px;
-    margin: 10px;
 }
 
 /* Kontakt */

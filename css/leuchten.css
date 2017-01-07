@@ -1,0 +1,41 @@
+/* Leuchten */
+#leuchten-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: flex-start;
+
+    max-width: 1170px;
+    margin:auto;
+
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#leuchten-flexbox>div {
+    max-width: 340px;
+    padding: 20px;
+    margin: 20px;
+
+    border: 1px solid #d74919;
+}
+
+#leuchten-flexbox>div>h3 {
+    font-weight: 400;
+    font-size: 26px;
+
+    color: #d74919;
+}
+#leuchten-flexbox>div>p:nth-child(2) {
+    font-size: 17px;
+    font-weight: 200;
+    font-style: italic;
+}
+#leuchten-flexbox>div>p:nth-child(3) {
+
+}
+#leuchten-flexbox>div>a {
+    width: 100%;
+}
