@@ -1,7 +1,7 @@
 body {
     margin-top: 51px;
     font-family: Berthold Akzidenz-Grotesk;
-    color: #9f9f9f;
+    color: #545454;
 
     overflow-x: hidden;
 
@@ -54,28 +54,56 @@ h1 {
     padding: 0;
 }
 
+#main-quote{
+    position: relative;
+    height: 160px;
+}
 #main-quote>p{
-    font-size: 25px;
+    font-size: 4vw;
     font-weight: 100;
+    line-height: 1.1em;
 
     font-style: italic;
     color: #ffffff;
 
-    background-color: red;
     width: 650px;
-    margin:auto;
+    max-width: 100%;
+    position: absolute;
+    left: 52%;
+    transform: translateX(-50%);
+    bottom:10px;
 }
 #main-quote>p>span:nth-child(1) {
-
-}
-#main-quote>p>span:nth-child(2) {
-
+    margin-left: 0px;
 }
 #main-quote>p>span:nth-child(3) {
-
+    margin-left: 10vw;
 }
-#main-quote>p>span:nth-child(4) {
-
+#main-quote>p>span:nth-child(5) {
+    margin-left: 18vw;
+}
+#main-quote>p>span:nth-child(7) {
+    margin-left: 46vw;
+    font-size: 2.4vw;
+}
+@media (min-width:662px) {
+    #main-quote>p{
+        font-size: 25px;
+        margin-top:20px;
+    }
+    #main-quote>p>span:nth-child(1) {
+        margin-left: 0px;
+    }
+    #main-quote>p>span:nth-child(3) {
+        margin-left: 100px;
+    }
+    #main-quote>p>span:nth-child(5) {
+        margin-left: 180px;
+    }
+    #main-quote>p>span:nth-child(7) {
+        font-size: 15px;
+        margin-left: 340px;
+    }
 }
 
 #landing-overlay {
@@ -152,10 +180,10 @@ h1 {
     }
 }
 .main-navitem a {
-    color: #9f9f9f;
+    color: #545454;
 }
 .main-navitem a:hover {
-    color: #7D7D7D;
+    color: #1e1e1e;
 }
 .main-navitem div {
     position: relative;
@@ -167,7 +195,7 @@ h1 {
 .main-navitem div>p {
     position: absolute;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
 
     bottom: 10px;
