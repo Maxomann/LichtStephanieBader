@@ -1,20 +1,23 @@
 body {
     margin-top: 51px;
     font-family: Berthold Akzidenz-Grotesk;
-    color: #9f9f9f;
+    color: #545454;
 
     overflow-x: hidden;
+
+    font-size: 16px;
 }
 
 h1 {
+    color: #545454;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     margin: 50px auto 50px auto;
-    font-size: 30px;
+    font-size: 32px;
 }
 @media (min-width: 400px) {
     h1 {
-        font-size: 36px;
+        font-size: 41px;
     }
 }
 
@@ -50,6 +53,58 @@ h1 {
 .full-width {
     width: 100%;
     padding: 0;
+}
+
+#main-quote{
+    position: relative;
+    height: 160px;
+}
+#main-quote>p{
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 1.1em;
+
+    font-style: italic;
+    color: #ffffff;
+
+    width: 650px;
+    max-width: 100%;
+    position: absolute;
+    left: 52%;
+    transform: translateX(-50%);
+    bottom:10px;
+}
+#main-quote>p>span:nth-child(1) {
+    margin-left: 0px;
+}
+#main-quote>p>span:nth-child(3) {
+    margin-left: 10vw;
+}
+#main-quote>p>span:nth-child(5) {
+    margin-left: 18vw;
+}
+#main-quote>p>span:nth-child(7) {
+    margin-left: 46vw;
+    font-size: 2.4vw;
+}
+@media (min-width:662px) {
+    #main-quote>p{
+        font-size: 25px;
+        margin-top:20px;
+    }
+    #main-quote>p>span:nth-child(1) {
+        margin-left: 0px;
+    }
+    #main-quote>p>span:nth-child(3) {
+        margin-left: 100px;
+    }
+    #main-quote>p>span:nth-child(5) {
+        margin-left: 180px;
+    }
+    #main-quote>p>span:nth-child(7) {
+        font-size: 15px;
+        margin-left: 340px;
+    }
 }
 
 #landing-overlay {
@@ -95,7 +150,7 @@ h1 {
 }
 #landing-nav>div {
     min-height: 500px;
-    max-width: 550px;
+    max-width: 625px;
 
     display: flex;
     flex-direction: row;
@@ -104,69 +159,32 @@ h1 {
     align-items: center;
     align-content: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     #landing-nav>div {
         max-width: 100%;
     }
 }
 .main-navitem {
-    width: 130px;
+    width: 190px;
     height: 156px;
     margin: 5px;
-    margin-bottom: 20px;
 }
-@media (min-width: 370px) {
+@media (min-width: 618px) {
     .main-navitem {
-        margin: 15px;
-    }
-}
-@media (min-width: 500px) {
-    .main-navitem {
-        width: 150px;
-        height: 180px;
-    }
-}
-@media (min-width: 768px) {
-    .main-navitem {
-        width: 200px;
-        height: 240px;
-    }
-    .main-navitem:nth-child(1) {
-        margin-top: 40px;
-    }
-    .main-navitem:nth-child(2) {
-        margin-top: 40px;
-    }
-    .main-navitem:nth-child(3) {
-        margin-bottom: 40px;
-    }
-    .main-navitem:nth-child(4) {
-        margin-bottom: 40px;
+        margin: 10px;
     }
 }
 @media (min-width: 1200px) {
-    .main-navitem:nth-child(1) {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    .main-navitem:nth-child(2) {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    .main-navitem:nth-child(3) {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    .main-navitem:nth-child(4) {
-        margin-top: 40px;
-        margin-bottom: 40px;
+    .main-navitem {
+        width: 240px;
+        height: 197px;
     }
 }
 .main-navitem a {
-    color: #9f9f9f;
+    color: #545454;
 }
 .main-navitem a:hover {
-    color: #7D7D7D;
+    color: #1e1e1e;
 }
 .main-navitem div {
     position: relative;
@@ -177,24 +195,14 @@ h1 {
 }
 .main-navitem div>p {
     position: absolute;
-    font-weight: 300;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 17px;
     text-align: center;
 
     bottom: 10px;
-    width: 80%;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
-}
-@media (min-width: 500px) {
-    .main-navitem div>p {
-        font-size: 16px;
-    }
-}
-@media (min-width: 768px) {
-    .main-navitem div>p {
-        font-size: 18px;
-    }
 }
 @media (min-width: 1200px) {
     .main-navitem div>p {
@@ -236,6 +244,10 @@ footer>div {
     width: 278px;
     margin:auto;
     margin-top: 50px;
+    text-align: center;
+}
+#footer_info a {
+    color: #23527c;
 }
 
 #footer_links {
@@ -254,49 +266,40 @@ footer>div {
     }
 }
 @media (min-width: 992px) {
+    #footer_info {
+        margin-top: 131px;
+    }
     #footer_links {
         margin-top: 184px;
         margin-left: 140px;
     }
 }
 
-/* Lecuhten */
-#leuchtenquickref {
-    text-align: center;
-    margin-top: 60px;
+/* Referenzen */
+.referenzen h3 {
+    font-weight: 300;
+    font-size: 1.8em;
+    color: #d74919;
+}
+.referenzen .motto {
+    font-weight: 200;
+    font-style: italic;
 }
 
-.lighttable {
-    width: 100%;
-    margin-top: 100px;
+.referenzen>.row>div {
+    margin-top: 80px;
 }
-.lighttable .row>* {
-    padding: 30px;
+.referenzen>.row>div>div {
+    padding: 20px;
+    border: 1px solid #d74919;
 }
-.lighttable .row div:first-child p:first-child {
-    font-weight: 500;
+
+.referenz-spacer {
+    height: 80px;
 }
-.lighttable .row {
-    margin-bottom: 40px;
-    vertical-align: middle;
-}
-.lighttable .row div{
-    min-height: 60px;
-}
-@media (min-width: 992px) {
-    .lighttable .row {
-        margin-bottom: 120px;
-    }
-    .lighttable .row div{
-        min-height: 180px;
-    }
-    .lighttable .addtextmargin {
-        margin-top: 40px;
-    }
-}
-.lighttable .row div img {
-    width: 130px;
-    margin: 10px;
+
+.sliderContainer {
+    padding: 40px;
 }
 
 /* Kontakt */
