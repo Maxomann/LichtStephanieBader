@@ -1,5 +1,4 @@
 body {
-    margin-top: 51px;
     font-family: Berthold Akzidenz-Grotesk;
     color: #545454;
 
@@ -27,11 +26,19 @@ h1 {
     height: 100px;
 }
 
+#navbar-fixed {
+    display: none;
+}
 .navbar {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    border-radius: 0;
 }
 .navbar-brand{
     transform: translateY(-3px);
+}
+.navbar-default {
+    border-color: #d74919;
 }
 
 .banner-small {
@@ -333,14 +340,10 @@ footer>div {
     background-image: url(../assets/demo2-blur.jpg);
 }
 #ref2 {
-    background-image: url(../assets/demo5-blur.jpg);
+    background-image: url(../assets/demo3-blur.jpg);
 }
 #ref3 {
     background-image: url(../assets/demo2-blur.jpg);
-}
-.ref-splitter {
-    height: 20px;
-    background-color: #d74919;
 }
 
 .rslides_tabs {
@@ -364,10 +367,18 @@ footer>div {
 .referenz-spacer {
     height: 80px;
 }
+.ref-splitter {
+    height: 4px;
+    background-color: #d74919;
+}
 
 .sliderContainer {
     max-width: 500px;
-    padding: 40px;
+}
+@media (min-width: 552px) {
+    .sliderContainer {
+        padding: 40px;
+    }
 }
 
 /* Kontakt */

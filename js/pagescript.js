@@ -1,7 +1,14 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
     initAnimateLogo();
-    $('landing-overlay').height(document.body.clientHeight-51);
+    if(document.getElementById('landing-overlay')) {
+        $('#navbar-fixed').hide();
+        $('#landing-overlay').height(document.body.clientHeight-51);
+        $('body').css('margin-top', '0');
+    } else {
+        $('.navbar').show();
+        $('body').css('margin-top', '51px');
+    }
 
     $(".rslides").responsiveSlides({
       auto: false,             // Boolean: Animate automatically, true or false
