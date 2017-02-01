@@ -9,15 +9,17 @@ body {
 }
 
 h1 {
-    color: #545454;
+    color: #eee;
     text-align: center;
     font-weight: 400;
-    margin: 50px auto 50px auto;
-    font-size: 32px;
+    margin: 63px auto 50px auto;
+    font-size: 30px;
+    font-style: italic;
 }
-@media (min-width: 400px) {
+@media (min-width: 500px) {
     h1 {
-        font-size: 41px;
+        margin-top: 54px;
+        font-size: 45px;
     }
 }
 
@@ -287,14 +289,21 @@ footer>div {
 }
 
 /* Referenzen */
+.referenzen {
+    padding:0;
+}
 .referenzen h3 {
     font-weight: 300;
-    font-size: 1.8em;
+    font-size: 2.2em;
     color: #d74919;
 }
 .referenzen .motto {
     font-weight: 200;
     font-style: italic;
+}
+
+.referenzen .ref-text {
+    margin-top: 40px;
 }
 
 .referenzen>.row>div {
@@ -304,12 +313,60 @@ footer>div {
     padding: 20px;
     border: 1px solid #d74919;
 }
+.referenzen .referenzen-element {
+    min-height: 500px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.referenzen .referenzen-element .ref-container-inner {
+    background-color: rgba(255,255,255,0.9);
+    padding: 40px;
+}
+#ref0 {
+    background-image: url(../assets/demo-blur.jpg);
+}
+#ref1 {
+    background-image: url(../assets/demo2-blur.jpg);
+}
+#ref2 {
+    background-image: url(../assets/demo5-blur.jpg);
+}
+#ref3 {
+    background-image: url(../assets/demo2-blur.jpg);
+}
+.ref-splitter {
+    height: 20px;
+    background-color: #d74919;
+}
+
+.rslides_tabs {
+    list-style-type: none;
+    background-color: #d74919;
+}
+.rslides_tabs li{
+    color: #ffffff;
+    display: inline-block;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #d74919;
+    padding-top: 5px;
+}
+.rslides_tabs li a{
+    margin-left: 10px;
+    color:inherit;
+}
 
 .referenz-spacer {
     height: 80px;
 }
 
 .sliderContainer {
+    max-width: 500px;
     padding: 40px;
 }
 
