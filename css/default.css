@@ -1,5 +1,4 @@
 body {
-    margin-top: 51px;
     font-family: Berthold Akzidenz-Grotesk;
     color: #545454;
 
@@ -9,15 +8,17 @@ body {
 }
 
 h1 {
-    color: #545454;
+    color: #eee;
     text-align: center;
     font-weight: 400;
-    margin: 50px auto 50px auto;
-    font-size: 32px;
+    margin: 63px auto 50px auto;
+    font-size: 30px;
+    font-style: italic;
 }
-@media (min-width: 400px) {
+@media (min-width: 500px) {
     h1 {
-        font-size: 41px;
+        margin-top: 54px;
+        font-size: 45px;
     }
 }
 
@@ -25,11 +26,19 @@ h1 {
     height: 100px;
 }
 
+#navbar-fixed {
+    display: none;
+}
 .navbar {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    border-radius: 0;
 }
 .navbar-brand{
-    transform: translateY(-3px);
+    transform: translateY(2px);
+}
+.navbar-default {
+    border-color: #d74919;
 }
 
 .banner-small {
@@ -139,6 +148,41 @@ h1 {
     cursor: pointer;
 }
 
+#main-text-left {
+    width:200px;
+    margin:auto;
+}
+@media (min-width: 992px) {
+    #main-text-left {
+        float: right;
+    }
+}
+@media (min-width: 500px) {
+    #main-text-right {
+        margin-left:50px;
+    }
+}
+
+.maintext-content {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.maintext-content h3 {
+    font-weight: 300;
+    font-size: 1.3em;
+    font-style: italic;
+}
+@media (min-width: 400px) {
+    .maintext-content h3 {
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 500px) {
+    .maintext-content h3 {
+        font-size: 1.9em;
+    }
+}
+
 #landing-nav {
     overflow: hidden;
     background-image: url(../assets/t.jpg);
@@ -191,7 +235,7 @@ h1 {
     width: 100%;
     height: 100%;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: rgba(255,255,255,0.9);
 }
 .main-navitem div>p {
     position: absolute;
@@ -275,15 +319,33 @@ footer>div {
     }
 }
 
+/* Lichtplanung */
+.lichtplanung-content {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.lichtplanung-content h3 {
+    font-weight: 300;
+    font-size: 2em;
+    font-style: italic;
+}
+
 /* Referenzen */
+.referenzen {
+    padding:0;
+}
 .referenzen h3 {
     font-weight: 300;
-    font-size: 1.8em;
+    font-size: 2.2em;
     color: #d74919;
 }
 .referenzen .motto {
     font-weight: 200;
     font-style: italic;
+}
+
+.referenzen .ref-text {
+    margin-top: 40px;
 }
 
 .referenzen>.row>div {
@@ -293,13 +355,65 @@ footer>div {
     padding: 20px;
     border: 1px solid #d74919;
 }
+.referenzen .referenzen-element {
+    min-height: 500px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.referenzen .referenzen-element .ref-container-inner {
+    background-color: rgba(255,255,255,0.9);
+    padding: 40px;
+}
+#ref0 {
+    background-image: url(../assets/demo-blur.jpg);
+}
+#ref1 {
+    background-image: url(../assets/demo2-blur.jpg);
+}
+#ref2 {
+    background-image: url(../assets/demo3-blur.jpg);
+}
+#ref3 {
+    background-image: url(../assets/demo2-blur.jpg);
+}
+
+.rslides_tabs {
+    list-style-type: none;
+    background-color: #d74919;
+}
+.rslides_tabs li{
+    color: #ffffff;
+    display: inline-block;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #d74919;
+    padding-top: 5px;
+}
+.rslides_tabs li a{
+    margin-left: 10px;
+    color:inherit;
+}
 
 .referenz-spacer {
     height: 80px;
 }
+.ref-splitter {
+    height: 4px;
+    background-color: #d74919;
+}
 
 .sliderContainer {
-    padding: 40px;
+    max-width: 500px;
+}
+@media (min-width: 552px) {
+    .sliderContainer {
+        padding: 40px;
+    }
 }
 
 /* Kontakt */

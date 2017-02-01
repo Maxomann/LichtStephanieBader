@@ -1,14 +1,34 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
     initAnimateLogo();
-    $('landing-overlay').height(document.body.clientHeight-51);
+
+    /*if(document.getElementById('landing-overlay') && document.body.clientWidth >= 768) {
+        $('#navbar-fixed').hide();
+        $('#landing-overlay').height(document.body.clientHeight-51);
+        $('body').css('margin-top', '0');
+
+        $(document).scroll(function(){
+            if( $(document).scrollTop()>=document.body.clientHeight-51 ){
+                $('.navbar').hide();
+                $('#navbar-fixed').show();
+                $('body').css('margin-top', '51px');
+            }
+        });
+    } else {
+        $('.navbar').hide();
+        $('#navbar-fixed').show();
+        $('body').css('margin-top', '51px');
+    }*/
+    $('.navbar').hide();
+    $('#navbar-fixed').show();
+    $('body').css('margin-top', '51px');
 
     $(".rslides").responsiveSlides({
       auto: false,             // Boolean: Animate automatically, true or false
       speed: 500,            // Integer: Speed of the transition, in milliseconds
       timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-      pager: false,           // Boolean: Show pager, true or false
-      nav: true,             // Boolean: Show navigation, true or false
+      pager: true,           // Boolean: Show pager, true or false
+      nav: false,             // Boolean: Show navigation, true or false
       random: false,          // Boolean: Randomize the order of the slides, true or false
       pause: false,           // Boolean: Pause on hover, true or false
       pauseControls: true,    // Boolean: Pause when hovering controls, true or false
