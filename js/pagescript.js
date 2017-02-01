@@ -1,14 +1,27 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
     initAnimateLogo();
-    if(document.getElementById('landing-overlay')) {
+
+    /*if(document.getElementById('landing-overlay') && document.body.clientWidth >= 768) {
         $('#navbar-fixed').hide();
         $('#landing-overlay').height(document.body.clientHeight-51);
         $('body').css('margin-top', '0');
+
+        $(document).scroll(function(){
+            if( $(document).scrollTop()>=document.body.clientHeight-51 ){
+                $('.navbar').hide();
+                $('#navbar-fixed').show();
+                $('body').css('margin-top', '51px');
+            }
+        });
     } else {
-        $('.navbar').show();
+        $('.navbar').hide();
+        $('#navbar-fixed').show();
         $('body').css('margin-top', '51px');
-    }
+    }*/
+    $('.navbar').hide();
+    $('#navbar-fixed').show();
+    $('body').css('margin-top', '51px');
 
     $(".rslides").responsiveSlides({
       auto: false,             // Boolean: Animate automatically, true or false
