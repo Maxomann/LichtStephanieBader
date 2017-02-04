@@ -1,6 +1,7 @@
 body {
     font-family: Berthold Akzidenz-Grotesk;
     color: #545454;
+    margin-top: 51px;
 
     overflow-x: hidden;
 
@@ -26,9 +27,6 @@ h1 {
     height: 100px;
 }
 
-#navbar-fixed {
-    display: none;
-}
 .navbar {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
@@ -69,7 +67,7 @@ h1 {
     height: 160px;
 }
 #main-quote>p{
-    font-size: 4vw;
+    font-size: 3.8vw;
     font-weight: 100;
     line-height: 1.1em;
 
@@ -93,7 +91,7 @@ h1 {
     margin-left: 18vw;
 }
 #main-quote>p>span:nth-child(7) {
-    margin-left: 46vw;
+    margin-left: 42vw;
     font-size: 2.4vw;
 }
 @media (min-width:662px) {
@@ -326,18 +324,45 @@ footer>div {
 }
 .lichtplanung-content h3 {
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1.3em;
     font-style: italic;
+}
+@media (min-width:450px) {
+    .lichtplanung-content h3 {
+        font-size: 1.8em;
+    }
+}
+@media (min-width:500px) {
+    .lichtplanung-content h3 {
+        font-size: 2em;
+    }
 }
 
 /* Referenzen */
+#referenz {
+    /*Anchor Position*/
+    height: 0;
+    position:relative;
+    bottom:51px;
+}
+
 .referenzen {
     padding:0;
 }
 .referenzen h3 {
     font-weight: 300;
-    font-size: 2.2em;
+    font-size: 1.6em;
     color: #d74919;
+}
+@media (min-width:450px) {
+    .referenzen h3 {
+        font-size: 1.8em;
+    }
+}
+@media (min-width:500px) {
+    .referenzen h3 {
+        font-size: 2.2em;
+    }
 }
 .referenzen .motto {
     font-weight: 200;

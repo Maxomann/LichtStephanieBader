@@ -2,26 +2,7 @@
 $( document ).ready(function() {
     initAnimateLogo();
 
-    /*if(document.getElementById('landing-overlay') && document.body.clientWidth >= 768) {
-        $('#navbar-fixed').hide();
-        $('#landing-overlay').height(document.body.clientHeight-51);
-        $('body').css('margin-top', '0');
-
-        $(document).scroll(function(){
-            if( $(document).scrollTop()>=document.body.clientHeight-51 ){
-                $('.navbar').hide();
-                $('#navbar-fixed').show();
-                $('body').css('margin-top', '51px');
-            }
-        });
-    } else {
-        $('.navbar').hide();
-        $('#navbar-fixed').show();
-        $('body').css('margin-top', '51px');
-    }*/
-    $('.navbar').hide();
-    $('#navbar-fixed').show();
-    $('body').css('margin-top', '51px');
+    $('#landing-overlay').css('height', (window.innerHeight-51).toString()+'px');
 
     $(".rslides").responsiveSlides({
       auto: false,             // Boolean: Animate automatically, true or false
@@ -53,7 +34,6 @@ function scrollToElement(element){
 
 function initAnimateLogo() {
     var overlay = document.getElementById('landing-overlay');
-    console.log(overlay);
     if(overlay !== null) {
         var animationSteps = document.getElementsByClassName('landing-overlay-image');
         var arrow = document.getElementById('landing-arrow-down');
