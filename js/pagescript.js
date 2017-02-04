@@ -2,6 +2,8 @@
 $( document ).ready(function() {
     initAnimateLogo();
 
+    $('#landing-overlay').css('height', (window.innerHeight-51).toString()+'px');
+
     $(".rslides").responsiveSlides({
       auto: false,             // Boolean: Animate automatically, true or false
       speed: 500,            // Integer: Speed of the transition, in milliseconds

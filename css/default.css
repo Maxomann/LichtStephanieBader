@@ -324,18 +324,45 @@ footer>div {
 }
 .lichtplanung-content h3 {
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1.3em;
     font-style: italic;
+}
+@media (min-width:450px) {
+    .lichtplanung-content h3 {
+        font-size: 1.8em;
+    }
+}
+@media (min-width:500px) {
+    .lichtplanung-content h3 {
+        font-size: 2em;
+    }
 }
 
 /* Referenzen */
+#referenz {
+    /*Anchor Position*/
+    height: 0;
+    position:relative;
+    bottom:51px;
+}
+
 .referenzen {
     padding:0;
 }
 .referenzen h3 {
     font-weight: 300;
-    font-size: 2.2em;
+    font-size: 1.6em;
     color: #d74919;
+}
+@media (min-width:450px) {
+    .referenzen h3 {
+        font-size: 1.8em;
+    }
+}
+@media (min-width:500px) {
+    .referenzen h3 {
+        font-size: 2.2em;
+    }
 }
 .referenzen .motto {
     font-weight: 200;
