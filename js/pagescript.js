@@ -22,6 +22,18 @@ $( document ).ready(function() {
       before: function(){},   // Function: Before callback
       after: function(){}     // Function: After callback
     });
+
+    $('a').click(function(){
+        // close bootstrap navbar if any link is clicked
+        var navbar_header = $('.navbar-header button');
+        if(!navbar_header.hasClass('collapsed')){
+            navbar_header.addClass('collapsed');
+        }
+        var navbar = $('#navbar');
+        if(navbar.hasClass('in')){
+            navbar.removeClass('in');
+        }
+    });
 });
 
 function scrollToElement(element){
