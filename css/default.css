@@ -8,13 +8,17 @@ body {
     font-size: 16px;
 }
 
+i {
+    font-weight: 300;
+}
+
 h1 {
     color: #eee;
     text-align: center;
     font-weight: 400;
     margin: 63px auto 50px auto;
     font-size: 30px;
-    font-style: italic;
+    /*font-style: italic;*/
 }
 @media (min-width: 500px) {
     h1 {
@@ -118,6 +122,10 @@ h1 {
     position: relative;
     height: 100%;
     background-color: #d74919;
+    background-image: url(../assets/main_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .landing-overlay-image {
     position: absolute;
@@ -133,6 +141,17 @@ h1 {
     .landing-overlay-image {
         transform: translate(-50%, -50%) scale(1);
     }
+}
+#landing-skip {
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translate(-46%, -50%);
+    width: 250px;
+    max-width: 100%;
+    color:white;
+    font-weight: 300;
+    cursor: pointer;
 }
 #landing-arrow-down {
     position: absolute;
@@ -214,12 +233,12 @@ h1 {
         margin: 10px;
     }
 }
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .main-navitem {
         width: 240px;
         height: 197px;
     }
-}
+}*/
 .main-navitem a {
     color: #545454;
 }
@@ -235,7 +254,7 @@ h1 {
 }
 .main-navitem div>p {
     position: absolute;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 17px;
     text-align: center;
 
@@ -244,11 +263,11 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
 }
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .main-navitem div>p {
         font-size: 20px;
     }
-}
+}*/
 .main-navitem div>img {
     margin-left: 50%;
     transform: translateX(-50%);
@@ -382,19 +401,32 @@ footer>div {
 }
 .referenzen .referenzen-element .ref-container-inner {
     background-color: rgba(255,255,255,0.9);
-    padding: 40px;
+    padding: 15px;
+}
+.referenzen .referenzen-element .ref-container-outer {
+    padding-left: 0;
+    padding-right: 0;
+}
+@media (min-width: 500px) {
+    .referenzen .referenzen-element .ref-container-inner {
+        padding: 40px;
+    }
+    .referenzen .referenzen-element .ref-container-outer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 #ref0 {
-    background-image: url(../assets/demo-blur.jpg);
+    background-image: url(../assets/referenz/villa_bg.jpg);
 }
 #ref1 {
-    background-image: url(../assets/demo2-blur.jpg);
+    background-image: url(../assets/referenz/praxis_bg.jpg);
 }
 #ref2 {
-    background-image: url(../assets/demo3-blur.jpg);
+    background-image: url(../assets/referenz/esszimmer_bg.jpg);
 }
 #ref3 {
-    background-image: url(../assets/demo2-blur.jpg);
+    background-image: url(../assets/referenz/niendorf_bg.jpg);
 }
 
 .rslides_tabs {
@@ -426,10 +458,15 @@ footer>div {
 .sliderContainer {
     max-width: 500px;
 }
-@media (min-width: 552px) {
-    .sliderContainer {
-        padding: 40px;
-    }
+.rslides {
+    max-height: 340px;
+}
+.rslides>li>img {
+    max-height: 340px;
+    width: auto;
+    max-width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Kontakt */

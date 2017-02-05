@@ -36,6 +36,14 @@ $( document ).ready(function() {
     });
 });
 
+function scrollToElementMain(element){
+    if(element===undefined){
+        $('html,body').animate({scrollTop: $('body').offset().top-51});
+    }else{
+        $('html,body').animate({scrollTop: element.outerHeight(true)});
+    }
+}
+
 function scrollToElement(element){
     if(element===undefined){
         $('html,body').animate({scrollTop: $('body').offset().top-51});

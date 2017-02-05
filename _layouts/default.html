@@ -4,22 +4,11 @@
         <img class="landing-overlay-image" src="assets/animation/logo-frame0.png">
         <img class="landing-overlay-image" src="assets/animation/logo-frame1.png">
         <img class="landing-overlay-image" src="assets/animation/logo-frame2.png">
-        <img id="landing-arrow-down" onclick="scrollToElement($('#landing-main'))" src="assets/icons/down-arrow.svg">
+        <div id="landing-skip" onclick="scrollToElementMain($('#landing-main'))"><p>Scrollen zum Überspringen</p></div>
+        <img id="landing-arrow-down" onclick="scrollToElementMain($('#landing-main'))" src="assets/icons/down-arrow.svg">
     </div>
 
-    <div id="landing-main"></div>
-    <!-- <div class="container-fluid banner-small">
-        <div id="main-quote">
-            <p>
-                <span>"Komm einen Atemzugnäher ans Licht,</span><br>
-                <span>Schwester,</span><br>
-                <span>Sei kühn und unnahbar"</span><br>
-                <span>- Rose Ausländer (1901 - 1988)</span>
-            </p>
-        </div>
-    </div> -->
-
-    <div class="maintext-content">
+    <div id="landing-main" class="maintext-content">
         <div class="container">
             <div class="col-md-4">
                 <div id="main-text-left">
@@ -29,8 +18,11 @@
 
             <div class="col-md-7">
                 <div id="main-text-right">
-                    <h3>Moderne Lichtplanung für Home & Office</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    <h3>Lust auf eine Reise ins Licht?</h3>
+                    <p>Frei nach dem Design Motto <i>form follows function</i> und
+                        der Eigenkreation <i>weniger ist mehr, dimmen ist alles</i> nehme ich sie mit
+                        auf eine gemeinsame Reise, an deren Ende ihre Räume in schönem,
+                        dekorativem und funktionellem Licht erleuchtet sind.
                         <br><a href="lichtplanung.html">Mehr erfahren...</a>
                     </p>
                 </div>
@@ -41,9 +33,7 @@
         </div>
     </div>
 
-    <div class="container-fluid banner-small"></div>
 
-    <!-- {% include pagecontent.html %} -->
     <div id="landing-nav" class="container-fluid banner-large">
         <div class="container-fluid">
             <div class="main-navitem">
