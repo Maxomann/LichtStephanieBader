@@ -12,18 +12,9 @@ i {
     font-weight: 300;
 }
 
-h1 {
-    color: #eee;
-    text-align: center;
-    font-weight: 400;
-    margin: 63px auto 50px auto;
-    font-size: 30px;
-    /*font-style: italic;*/
-}
-@media (min-width: 500px) {
+@media (max-width: 400px) {
     h1 {
-        margin-top: 54px;
-        font-size: 45px;
+        font-size: 1.7em;
     }
 }
 
@@ -345,18 +336,6 @@ footer>div {
 }
 
 /* Lichtplanung */
-.lichtplanung-content {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-.lichtplanung-content h3 {
-    font-size: 1.2em;
-}
-@media (min-width:450px) {
-    .lichtplanung-content h3 {
-        font-size: 1.8em;
-    }
-}
 .licht-nav-text {
     position: relative;
     left: 50%;
