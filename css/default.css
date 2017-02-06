@@ -357,25 +357,22 @@ footer>div {
         font-size: 1.8em;
     }
 }
-.licht-nav-button {
-    width: 320px;
-    height: 80px;
-    max-width: 100%;
-    margin:auto;
-    margin-left: 50%;
-    margin-top: 40px;
+.licht-nav-text {
+    position: relative;
+    left: 50%;
+    margin-top: 55px;
     transform: translateX(-50%);
-    background-color: rgba(255,255,255,0.9);
 
-    font-size: 1.4em;
-    font-weight: 300;
+    width: 300px;
+
+    color: white;
+    font-size: 1.8em;
+
+    font-style: italic;
 }
-.licht-nav-button>a {
-    color:inherit;
-}
-.licht-nav-button>a>p {
-    margin-left: 25px;
-    transform: translateY(25px);
+.licht-nav-text-parent:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 /* Referenzen */
