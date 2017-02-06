@@ -49,6 +49,16 @@ h1 {
     background-color: #d74919;
 }
 
+.banner-small-bg {
+    width: 100%;
+    min-height: 160px;
+    background-color: #d74919;
+    background-image: url(../assets/main_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .banner-medium {
     width: 100%;
     min-height: 400px;
@@ -346,6 +356,26 @@ footer>div {
     .lichtplanung-content h3 {
         font-size: 1.8em;
     }
+}
+.licht-nav-button {
+    width: 320px;
+    height: 80px;
+    max-width: 100%;
+    margin:auto;
+    margin-left: 50%;
+    margin-top: 40px;
+    transform: translateX(-50%);
+    background-color: rgba(255,255,255,0.9);
+
+    font-size: 1.4em;
+    font-weight: 300;
+}
+.licht-nav-button>a {
+    color:inherit;
+}
+.licht-nav-button>a>p {
+    margin-left: 25px;
+    transform: translateY(25px);
 }
 
 /* Referenzen */
