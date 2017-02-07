@@ -1,42 +1,150 @@
+function changeImgSize(){
+    var img = this.content.find('img');
+    img.css('max-height', window.innerHeight);
+    img.css('width', 'auto');
+    img.css('max-width', 'auto');
+}
+
 // A $( document ).ready() block.
 $( document ).ready(function() {
     initAnimateLogo();
 
     $('#landing-overlay').css('height', (window.innerHeight-51).toString()+'px');
 
-    $(".rslides").responsiveSlides({
-      auto: false,             // Boolean: Animate automatically, true or false
-      speed: 500,            // Integer: Speed of the transition, in milliseconds
-      timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-      pager: true,           // Boolean: Show pager, true or false
-      nav: false,             // Boolean: Show navigation, true or false
-      random: false,          // Boolean: Randomize the order of the slides, true or false
-      pause: false,           // Boolean: Pause on hover, true or false
-      pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-      prevText: "Previous",   // String: Text for the "previous" button
-      nextText: "Next",       // String: Text for the "next" button
-      maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
-      navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-      manualControls: "",     // Selector: Declare custom pager navigation
-      namespace: "rslides",   // String: Change the default namespace used
-      before: function(){},   // Function: Before callback
-      after: function(){}     // Function: After callback
+    // Example with multiple objects
+    $('#ref0').magnificPopup({
+        disableOn: 0,
+        items: [
+            {
+              src: 'assets/referenz/villa_0.jpg'
+            },
+            {
+              src: 'assets/referenz/villa_1.jpg'
+            },
+            {
+              src: 'assets/referenz/villa_2.jpg'
+            },
+            {
+              src: 'assets/referenz/villa_3.jpg'
+            },
+            {
+              src: 'assets/referenz/villa_4.jpg'
+            },
+            {
+              src: 'assets/referenz/villa_5.jpg'
+            },
+            {
+              src: 'assets/referenz/villa_6.jpg'
+            }
+        ],
+        gallery: {
+          enabled: true,
+          preload: [1,2]
+        },
+        callbacks: {
+            resize: changeImgSize,
+            imageLoadComplete:changeImgSize,
+            change:changeImgSize
+        },
+        type: 'image' // this is default type
     });
-
-    $('a').click(function(){
-        // close bootstrap navbar if any link is clicked
-        var navbar_header = $('.navbar-header button');
-        if(!navbar_header.hasClass('collapsed')){
-            navbar_header.addClass('collapsed');
-        }
-        var navbar = $('#navbar');
-        if(navbar.hasClass('in')){
-            navbar.removeClass('in');
-        }
+    $('#ref1').magnificPopup({
+        disableOn: 0,
+        items: [
+            {
+              src: 'assets/referenz/praxis_0.jpg'
+            },
+            {
+              src: 'assets/referenz/praxis_1.jpg'
+            },
+            {
+              src: 'assets/referenz/praxis_2.jpg'
+            },
+            {
+              src: 'assets/referenz/praxis_3.jpg'
+            },
+            {
+              src: 'assets/referenz/praxis_4.jpg'
+            },
+            {
+              src: 'assets/referenz/praxis_5.jpg'
+            }
+        ],
+        gallery: {
+          enabled: true,
+          preload: [1,2]
+        },
+        callbacks: {
+            resize: changeImgSize,
+            imageLoadComplete:changeImgSize,
+            change:changeImgSize
+        },
+        type: 'image' // this is default type
+    });
+    $('#ref2').magnificPopup({
+        disableOn: 0,
+        items: [
+            {
+              src: 'assets/referenz/esszimmer_0.jpg'
+            },
+            {
+              src: 'assets/referenz/esszimmer_1.jpg'
+            }
+        ],
+        gallery: {
+          enabled: true,
+          preload: [1,2]
+        },
+        callbacks: {
+            resize: changeImgSize,
+            imageLoadComplete:changeImgSize,
+            change:changeImgSize
+        },
+        type: 'image' // this is default type
+    });
+    $('#ref3').magnificPopup({
+        disableOn: 0,
+        items: [
+            {
+              src: 'assets/referenz/niendorf_0.jpg'
+            },
+            {
+              src: 'assets/referenz/niendorf_1.jpg'
+            },
+            {
+              src: 'assets/referenz/niendorf_2.jpg'
+            },
+            {
+              src: 'assets/referenz/niendorf_3.jpg'
+            },
+            {
+              src: 'assets/referenz/niendorf_4.jpg'
+            }
+        ],
+        gallery: {
+          enabled: true,
+          preload: [1,2]
+        },
+        callbacks: {
+            resize: changeImgSize,
+            imageLoadComplete:changeImgSize,
+            change:changeImgSize
+        },
+        type: 'image' // this is default type
     });
 });
 
+function scrollToElementMain(element){
+    var combinedHeight = $('#landing-main').outerHeight(true);//+$('#main-quote').outerHeight(true);
+    if(window.innerHeight< combinedHeight) {
+        $('html,body').animate({scrollTop: $('#landing-main').offset().top-131});
+    }else {
+        $('html,body').animate({scrollTop: combinedHeight});
+    }
+}
+
 function scrollToElement(element){
+    console.log(element.offset().top);
     if(element===undefined){
         $('html,body').animate({scrollTop: $('body').offset().top-51});
     }else{
