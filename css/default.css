@@ -8,6 +8,10 @@ body {
     font-size: 16px;
 }
 
+hr {
+    border-color: #545454;
+}
+
 i {
     font-weight: 300;
 }
@@ -37,7 +41,8 @@ i {
 .banner-small {
     width: 100%;
     min-height: 160px;
-    background-color: #d74919;
+    /*background-color: #d74919;*/
+    background-color: white;
 }
 
 .banner-small-bg {
@@ -77,14 +82,16 @@ i {
     line-height: 1.1em;
 
     font-style: italic;
-    color: #ffffff;
+    /*color: #ffffff;*/
 
     width: 650px;
     max-width: 100%;
     position: absolute;
     left: 52%;
-    transform: translateX(-50%);
-    bottom:10px;
+    transform: translate(-50%, -50%);
+    top:50%;
+
+    margin:0;
 }
 #main-quote>p>span:nth-child(1) {
     margin-left: 0px;
@@ -102,7 +109,6 @@ i {
 @media (min-width:662px) {
     #main-quote>p{
         font-size: 25px;
-        margin-top:20px;
     }
     #main-quote>p>span:nth-child(1) {
         margin-left: 0px;
