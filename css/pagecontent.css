@@ -4,3 +4,6 @@
 .pagecontent img {
     height: 300px;
 }
+.pagecontent h1 {
+    color: inherit;
+}

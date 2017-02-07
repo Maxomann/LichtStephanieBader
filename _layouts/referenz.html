@@ -1,78 +1,57 @@
 {% include html_start.html %}
 
-    <div class="container-fluid banner-small"></div>
+<!--<div class="container-fluid banner-small">
+    <h1>{{site.title_referenz}}</h1>
+</div>-->
+<div class="referenz-spacer"></div>
 
-    <div class="container">
-        <h1>{{site.title_referenz}}</h1>
-        <hr>
+<div class="container">
+    <h1>{{site.title_referenz}}</h1>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    <br><i>Zum öffnen der Galerie auf die Bilder klicken</i>
+    </p>
+    <!--<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    </p>
 
-        <div class="referenzen">
+    <hr style="margin-top:80px; margin-bottom:0">-->
+</div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div>
-                        <h3>Elbvilla Blankenese</h3>
-                        <p class="motto">Motto: Leuchten die nicht jeder hat</p>
-                        <div class="sliderContainer">
-                            <ul class="rslides">
-                              <li><img src="assets/demo.jpg" alt=""></li>
-                              <li><img src="assets/demo4.jpg" alt=""></li>
-                              <li><img src="assets/demo5.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div>
-                        <h3>Zahnarztpraxis Eimsbüttel</h3>
-                        <p class="motto">Motto: Freundliche Leuchten für Familienpraxis</p>
-                        <div class="sliderContainer">
-                            <ul class="rslides">
-                              <li><img src="assets/demo.jpg" alt=""></li>
-                              <li><img src="assets/demo4.jpg" alt=""></li>
-                              <li><img src="assets/demo5.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div>
-                        <h3>Esszimmer Eimsbüttel</h3>
-                        <p class="motto">Motto: Leuchte soll Holztisch nicht die Show stehlen</p>
-                        <div class="sliderContainer">
-                            <ul class="rslides">
-                              <li><img src="assets/demo.jpg" alt=""></li>
-                              <li><img src="assets/demo4.jpg" alt=""></li>
-                              <li><img src="assets/demo5.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div>
-                        <h3>Villa Niendorf</h3>
-                        <p class="motto">Motto: Bauhausarchitektur unterstützende Leuchten</p>
-                        <div class="sliderContainer">
-                            <ul class="rslides">
-                              <li><img src="assets/demo.jpg" alt=""></li>
-                              <li><img src="assets/demo4.jpg" alt=""></li>
-                              <li><img src="assets/demo5.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div id="referenz-flexbox">
+    <div id="ref0">
+        <img src="assets/referenz/villa_bg.jpg">
+        <div>
+            <h3>Elbvilla Blankenese</h3>
+            <p>Motto: Leuchten die nicht jeder hat</p>
         </div>
-
-        <div class="referenz-spacer"></div>
-
-        {% include pagecontent.html %}
-
-        <div class="referenz-spacer"></div>
-
     </div>
+    <div id="ref1">
+        <img src="assets/referenz/praxis_bg.jpg">
+        <div>
+            <h3>Zahnarztpraxis Eimsbüttel</h3>
+            <p>Motto: Freundliche Leuchten für Familienpraxis</p>
+        </div>
+    </div>
+    <div id="ref2">
+        <img src="assets/referenz/esszimmer_bg.jpg">
+        <div>
+            <h3>Esszimmer Eimsbüttel</h3>
+            <p>Motto: Dem Holztisch nicht die Show stehlen</p>
+        </div>
+    </div>
+    <div id="ref3">
+        <img src="assets/referenz/niendorf_bg.jpg">
+        <div>
+            <h3>Villa Niendorf</h3>
+            <p>Motto: Bauhausaritektur unterstützende Leuchten</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h3>Sie möchten mehr sehen?</h3>
+    <p><a href="https://google.de" target="_blank">Hier</a> gehts zur letzten Zeitschriften-Veröffentlichung.</p>
+</div>
+
+<div class="referenz-spacer"></div>
 
 {% include html_end.html %}

@@ -1,23 +1,24 @@
 body {
-    margin-top: 51px;
     font-family: Berthold Akzidenz-Grotesk;
     color: #545454;
+    margin-top: 51px;
 
     overflow-x: hidden;
 
     font-size: 16px;
 }
 
-h1 {
-    color: #545454;
-    text-align: center;
-    font-weight: 400;
-    margin: 50px auto 50px auto;
-    font-size: 32px;
+hr {
+    border-color: #545454;
 }
-@media (min-width: 400px) {
+
+i {
+    font-weight: 300;
+}
+
+@media (max-width: 400px) {
     h1 {
-        font-size: 41px;
+        font-size: 1.7em;
     }
 }
 
@@ -27,15 +28,31 @@ h1 {
 
 .navbar {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    border-radius: 0;
 }
 .navbar-brand{
-    transform: translateY(-3px);
+    transform: translateY(2px);
+}
+.navbar-default {
+    border-color: #d74919;
 }
 
 .banner-small {
     width: 100%;
     min-height: 160px;
+    /*background-color: #d74919;*/
+    background-color: white;
+}
+
+.banner-small-bg {
+    width: 100%;
+    min-height: 160px;
     background-color: #d74919;
+    background-image: url(../assets/main_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .banner-medium {
@@ -60,19 +77,21 @@ h1 {
     height: 160px;
 }
 #main-quote>p{
-    font-size: 4vw;
+    font-size: 3.8vw;
     font-weight: 100;
     line-height: 1.1em;
 
     font-style: italic;
-    color: #ffffff;
+    /*color: #ffffff;*/
 
     width: 650px;
     max-width: 100%;
     position: absolute;
     left: 52%;
-    transform: translateX(-50%);
-    bottom:10px;
+    transform: translate(-50%, -50%);
+    top:50%;
+
+    margin:0;
 }
 #main-quote>p>span:nth-child(1) {
     margin-left: 0px;
@@ -84,13 +103,12 @@ h1 {
     margin-left: 18vw;
 }
 #main-quote>p>span:nth-child(7) {
-    margin-left: 46vw;
+    margin-left: 42vw;
     font-size: 2.4vw;
 }
 @media (min-width:662px) {
     #main-quote>p{
         font-size: 25px;
-        margin-top:20px;
     }
     #main-quote>p>span:nth-child(1) {
         margin-left: 0px;
@@ -111,6 +129,10 @@ h1 {
     position: relative;
     height: 100%;
     background-color: #d74919;
+    background-image: url(../assets/main_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .landing-overlay-image {
     position: absolute;
@@ -127,9 +149,20 @@ h1 {
         transform: translate(-50%, -50%) scale(1);
     }
 }
+#landing-skip {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-46%, -50%);
+    width: 250px;
+    max-width: 100%;
+    color:white;
+    font-weight: 300;
+    cursor: pointer;
+}
 #landing-arrow-down {
     position: absolute;
-    bottom: 10%;
+    bottom: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40px;
@@ -137,6 +170,55 @@ h1 {
     opacity: 0;
     transition:opacity 1.5s linear;
     cursor: pointer;
+}
+@media (min-height:400px) {
+    #landing-skip {
+        bottom: 80px;
+    }
+    #landing-arrow-down {
+        bottom: 40px;
+    }
+}
+@media (min-height:800px) {
+    #landing-skip {
+        bottom: 140px;
+    }
+    #landing-arrow-down {
+        bottom: 100px;
+    }
+}
+
+#main-text-left {
+    width:200px;
+    margin:auto;
+}
+@media (min-width: 992px) {
+    #main-text-left {
+        float: right;
+    }
+}
+@media (min-width: 500px) {
+    #main-text-right {
+        margin-left:50px;
+    }
+}
+
+.maintext-content {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.maintext-content h3 {
+    font-size: 1.2em;
+}
+@media (min-width: 400px) {
+    .maintext-content h3 {
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 500px) {
+    .maintext-content h3 {
+        font-size: 1.9em;
+    }
 }
 
 #landing-nav {
@@ -174,12 +256,12 @@ h1 {
         margin: 10px;
     }
 }
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .main-navitem {
         width: 240px;
         height: 197px;
     }
-}
+}*/
 .main-navitem a {
     color: #545454;
 }
@@ -195,7 +277,7 @@ h1 {
 }
 .main-navitem div>p {
     position: absolute;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 17px;
     text-align: center;
 
@@ -204,11 +286,11 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
 }
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .main-navitem div>p {
         font-size: 20px;
     }
-}
+}*/
 .main-navitem div>img {
     margin-left: 50%;
     transform: translateX(-50%);
@@ -276,41 +358,23 @@ footer>div {
 }
 
 /* Lichtplanung */
-.lichtplanung-content {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-.lichtplanung-content h3 {
-    font-weight: 300;
-    font-size: 2em;
-    font-style: italic;
-}
+.licht-nav-text {
+    position: relative;
+    left: 50%;
+    margin-top: 55px;
+    transform: translateX(-50%);
 
-/* Referenzen */
-.referenzen h3 {
-    font-weight: 300;
+    width: 300px;
+
+    color: white;
     font-size: 1.8em;
-    color: #d74919;
-}
-.referenzen .motto {
-    font-weight: 200;
+    font-weight: 300;
+
     font-style: italic;
 }
-
-.referenzen>.row>div {
-    margin-top: 80px;
-}
-.referenzen>.row>div>div {
-    padding: 20px;
-    border: 1px solid #d74919;
-}
-
-.referenz-spacer {
-    height: 80px;
-}
-
-.sliderContainer {
-    padding: 40px;
+.licht-nav-text-parent:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 /* Kontakt */
@@ -344,8 +408,6 @@ form textarea {
 
 legend {
     color: inherit;
-    font-style: italic;
-    font-weight: 300;
 }
 
 .gmaps {
