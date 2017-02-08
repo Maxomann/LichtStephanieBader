@@ -371,10 +371,12 @@ footer>div {
     font-weight: 300;
 
     font-style: italic;
-}
-.licht-nav-text-parent:hover{
-    color: white;
     text-decoration: underline;
+    transition: all .2s ease-in-out;
+}
+.licht-nav-text-parent:hover>p{
+    color: white;
+    transform: translateX(-50%) scale(1.2);
 }
 
 /* Kontakt */
