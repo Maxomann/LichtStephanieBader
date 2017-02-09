@@ -1,6 +1,6 @@
 body {
     font-family: Berthold Akzidenz-Grotesk;
-    color: #545454;
+    /*color: #545454;*/
     margin-top: 51px;
 
     overflow-x: hidden;
@@ -9,17 +9,25 @@ body {
 }
 
 hr {
-    border-color: #545454;
+    border-color: #963311;
 }
 
 i {
     font-weight: 300;
 }
 
+h1 {
+    color: #963311;
+    /*text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);*/
+}
 @media (max-width: 400px) {
     h1 {
         font-size: 1.7em;
     }
+}
+
+legend {
+    border-color: #333;
 }
 
 .placeholder-bottom {
@@ -75,6 +83,7 @@ i {
 #main-quote{
     position: relative;
     height: 160px;
+    color: #963311;
 }
 #main-quote>p{
     font-size: 3.8vw;
@@ -371,10 +380,12 @@ footer>div {
     font-weight: 300;
 
     font-style: italic;
-}
-.licht-nav-text-parent:hover{
-    color: white;
     text-decoration: underline;
+    transition: all .2s ease-in-out;
+}
+.licht-nav-text-parent:hover>p{
+    color: white;
+    transform: translateX(-50%) scale(1.2);
 }
 
 /* Kontakt */
