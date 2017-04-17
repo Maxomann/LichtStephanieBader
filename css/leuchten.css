@@ -24,6 +24,7 @@
 
 #leuchten-flexbox>div>h3 {
     font-size: 26px;
+    min-height: 56px;
 
     color: #d74919;
 }
