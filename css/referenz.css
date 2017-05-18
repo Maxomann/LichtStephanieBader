@@ -1,7 +1,11 @@
 /* Referenz */
 
 .referenz-spacer {
-    height: 80px;
+    height: 40px;
+}
+
+.referenz-info {
+    margin-top: 20px;
 }
 
 #referenz-flexbox {
@@ -46,6 +50,8 @@
 }
 
 #referenz-flexbox>div>div {
+    min-height: 110px;
+
     pointer-events: none;
     position: absolute;
     bottom:0;

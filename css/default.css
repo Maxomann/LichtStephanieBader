@@ -161,8 +161,8 @@ legend {
     position: absolute;
     bottom: 40px;
     left: 50%;
-    transform: translate(-46%, -50%);
-    width: 250px;
+    transform: translate(-50%, -50%);
+    width: 72px;
     max-width: 100%;
     color:white;
     font-weight: 300;
@@ -270,11 +270,12 @@ legend {
         height: 197px;
     }
 }*/
-.main-navitem a {
+.main-navitem a p {
     color: #545454;
 }
-.main-navitem a:hover {
+.main-navitem a:hover p {
     color: #1e1e1e;
+    text-decoration: underline;
 }
 .main-navitem div {
     position: relative;
@@ -294,11 +295,6 @@ legend {
     left: 50%;
     transform: translateX(-50%);
 }
-/*@media (min-width: 1200px) {
-    .main-navitem div>p {
-        font-size: 20px;
-    }
-}*/
 .main-navitem div>img {
     margin-left: 50%;
     transform: translateX(-50%);
@@ -309,42 +305,40 @@ legend {
 }
 
 footer {
+    overflow: hidden;
+
+    width: 100%;
+    min-height: 110px;
+    background-color: #d74919;
+
     position: relative;
     color: #ffffff;
     font-weight: 300;
+
+    text-align: center;
 }
 footer a {
     color: #ffffff;
 }
 
-footer>div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 #footer_logo {
     width: 350px;
     max-width: 100%;
+    margin-top: 30px;
 }
 
 #footer_info {
-    transform: translateX(4px);
-    width: 278px;
-    margin:auto;
-    margin-top: 50px;
-    text-align: center;
+    margin-top: 30px;
 }
+
 #footer_info a {
     color: #23527c;
 }
 
 #footer_links {
-    text-align: center;
-    margin-top: 80px;
+    margin-top: 10px;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     #footer_info {
         transform: translateX(0);
         text-align: left;
@@ -363,7 +357,7 @@ footer>div {
         margin-top: 184px;
         margin-left: 140px;
     }
-}
+}*/
 
 /* Lichtplanung */
 .licht-nav-text {
@@ -372,11 +366,11 @@ footer>div {
     margin-top: 55px;
     transform: translateX(-50%);
 
-    width: 300px;
+    width: 320px;
 
     color: white;
     font-size: 1.8em;
-    font-weight: 300;
+    font-weight: 400;
 
     font-style: italic;
     text-decoration: underline;
@@ -424,4 +418,9 @@ legend {
     max-width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.whole-page {
+    overflow: hidden;
+    min-height: 100%;
 }
