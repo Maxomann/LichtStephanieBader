@@ -37,7 +37,7 @@
     font-style: italic;
 }
 #leuchten-flexbox>div>p:nth-child(3) {
-
+    min-height: 66px;
 }
 #leuchten-flexbox>div>a {
     width: 100%;
