@@ -3,6 +3,7 @@ layout: default
 title: Home
 content_description:
 robot_tags:
+portrait_image: "assets/portrait-rund.jpg"
 ---
 
 
