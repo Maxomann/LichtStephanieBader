@@ -3,60 +3,65 @@
     <div class="referenz-spacer"></div>
 
     <div class="container">
-            <div class="row">
+            <div class="row lichtplanung-row">
                 {% for el in site.pages %}
                     {% if el.path == "block0.md" %}
                         {% assign thisblock = el %}
                     {% endif %}
                 {% endfor %}
 
-                <div class="col-md-6">
-                    <img style="max-width:100%; margin-left:50%; margin-top: 80px; transform:translateX(-50%)" width="400" src="{{thisblock.image}}" alt="Portrait">
-                </div>
+                <div class="lichtplanung-block">
+                    <div class="col-md-6">
+                        <img class="lichtplanung-image" src="{{thisblock.image}}" alt="Portrait">
+                    </div>
 
-                <div class="col-md-6">
-                    <br><br><br>
-                    {{thisblock.content}}
+                    <div class="col-md-6">
+                        <div class="lichtplanung-text">
+                            {{thisblock.content}}
+                        </div>
+                    </div>
                 </div>
             </div>
 
-        <br><br><br>
-
-            <div class="row">
+            <div class="row lichtplanung-row">
                 {% for el in site.pages %}
                     {% if el.path == "block1.md" %}
                         {% assign thisblock = el %}
                     {% endif %}
                 {% endfor %}
 
-                <div class="col-md-6">
-                    <br><br><br><br>
-                    {{thisblock.content}}
-                </div>
+                <div class="lichtplanung-block">
+                    <div class="col-md-6">
+                        <div class="lichtplanung-text">
+                            {{thisblock.content}}
+                        </div>
+                    </div>
 
-                <div class="col-md-6">
-                    <img style="max-width:100%; margin-left:50%; margin-top: 80px; transform:translateX(-50%)" width="400" src="{{thisblock.image}}" alt="Portrait">
+                    <div class="col-md-6">
+                        <img class="lichtplanung-image" src="{{thisblock.image}}" alt="Portrait">
+                    </div>
                 </div>
             </div>
 
-<br><br><br><br><br><br>
-
-            <div class="row">
+            <div class="row lichtplanung-row-last">
                 {% for el in site.pages %}
                     {% if el.path == "block2.md" %}
                         {% assign thisblock = el %}
                     {% endif %}
                 {% endfor %}
 
-                <div class="col-md-6">
-                    <img style="max-width:100%; margin-left:50%; transform:translateX(-50%)" width="350" src="{{thisblock.image}}" alt="Portrait">
-                </div>
+                <div class="lichtplanung-block">
+                    <div class="col-md-6">
+                        <img class="lichtplanung-image" src="{{thisblock.image}}" alt="Portrait">
+                    </div>
 
-                <div class="col-md-6">
-                    {{thisblock.content}}
+                    <div class="col-md-6">
+                        <div class="lichtplanung-text">
+                            {{thisblock.content}}
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br><br><br><br>
 
             {{content}}
         
