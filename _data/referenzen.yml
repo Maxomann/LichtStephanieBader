@@ -1,0 +1,39 @@
+- name: "Elbvilla Blankenese"
+  motto: "Aufgabe: Leuchten, die nicht jeder hat"
+  hintergrundbild: "assets/referenz/villa_bg.jpg"
+  bilder:
+    - "assets/referenz/villa_0.jpg"
+    - "assets/referenz/villa_1.jpg"
+    - "assets/referenz/villa_2.jpg"
+    - "assets/referenz/villa_3.jpg"
+    - "assets/referenz/villa_4.jpg"
+    - "assets/referenz/villa_5.jpg"
+    - "assets/referenz/villa_6.jpg"
+
+- name: "Esszimmer Eimsbüttel"
+  motto: "Aufgabe: Leuchte, die dem Holztisch nicht die Show stiehlt"
+  hintergrundbild: "assets/referenz/esszimmer_bg.jpg"
+  bilder:
+    - "assets/referenz/esszimmer_0.jpg"
+    - "assets/referenz/esszimmer_1.jpg"
+
+- name: "Villa Niendorf"
+  motto: "Aufgabe: Leuchten, die den Charakter des Hauses unterstützen"
+  hintergrundbild: "assets/referenz/niendorf_bg.jpg"
+  bilder:
+    - "assets/referenz/niendorf_0.jpg"
+    - "assets/referenz/niendorf_1.jpg"
+    - "assets/referenz/niendorf_2.jpg"
+    - "assets/referenz/niendorf_3.jpg"
+    - "assets/referenz/niendorf_4.jpg"
+
+- name: "Zahnarztpraxis Eimsbüttel"
+  motto: "Aufgabe: Leuchten, die den familiären Charakter der Praxis unterstützen"
+  hintergrundbild: "assets/referenz/praxis_bg.jpg"
+  bilder:
+    - "assets/referenz/praxis_0.jpg"
+    - "assets/referenz/praxis_1.jpg"
+    - "assets/referenz/praxis_2.jpg"
+    - "assets/referenz/praxis_3.jpg"
+    - "assets/referenz/praxis_4.jpg"
+    - "assets/referenz/praxis_5.jpg"

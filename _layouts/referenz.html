@@ -9,34 +9,19 @@
 </div>
 
 <div id="referenz-flexbox">
-    <div id="ref0">
-        <img src="assets/referenz/villa_bg.jpg">
-        <div>
-            <h3>Elbvilla Blankenese</h3>
-            <p>Aufgabe: Leuchten, die nicht jeder hat</p>
+
+    {% for el in site.data.referenzen %}
+
+        <div id="referenz-element{{ forloop.index }}">
+            <img src="{{ el.hintergrundbild }}">
+            <div>
+                <h3>{{ el.name }}</h3>
+                <p>{{ el.motto }}</p>
+            </div>
         </div>
-    </div>
-    <div id="ref2">
-        <img src="assets/referenz/esszimmer_bg.jpg">
-        <div>
-            <h3>Esszimmer Eimsbüttel</h3>
-            <p>Aufgabe: Leuchte, die dem Holztisch nicht die Show stiehlt</p>
-        </div>
-    </div>
-    <div id="ref3">
-        <img src="assets/referenz/niendorf_bg.jpg">
-        <div>
-            <h3>Villa Niendorf</h3>
-            <p>Aufgabe: Leuchten, die den Charakter des Hauses unterstützen</p>
-        </div>
-    </div>
-    <div id="ref1">
-        <img src="assets/referenz/praxis_bg.jpg">
-        <div>
-            <h3>Zahnarztpraxis Eimsbüttel</h3>
-            <p>Aufgabe: Leuchten, die den familiären Charakter der Praxis unterstützen</p>
-        </div>
-    </div>
+
+    {% endfor %}
+
 </div>
 
 <div class="referenz-spacer"></div>
