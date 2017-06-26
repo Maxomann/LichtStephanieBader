@@ -231,7 +231,7 @@ legend {
 
 #landing-nav {
     overflow: hidden;
-    background-image: url(../assets/t.jpg);
+    background-image: url(../assets/main_nav_bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -338,26 +338,6 @@ footer a {
 #footer_links {
     margin-top: 10px;
 }
-/*@media (min-width: 768px) {
-    #footer_info {
-        transform: translateX(0);
-        text-align: left;
-        margin-left: 78px;
-    }
-    #footer_links {
-        text-align: left;
-        margin-left: 78px;
-    }
-}
-@media (min-width: 992px) {
-    #footer_info {
-        margin-top: 131px;
-    }
-    #footer_links {
-        margin-top: 184px;
-        margin-left: 140px;
-    }
-}*/
 
 /* Lichtplanung */
 .licht-nav-text {
@@ -379,6 +359,26 @@ footer a {
 .licht-nav-text-parent:hover>p{
     color: white;
     transform: translateX(-50%) scale(1.2);
+}
+
+.lichtplanung-row {
+    margin-top: 40px;
+    margin-bottom: 140px;
+}
+
+.lichtplanung-row-last {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.lichtplanung-image
+{
+    width: 500px;
+    max-width: 100%;
+}
+
+.lichtplanung-text {
+    margin-top:65px;
 }
 
 /* Kontakt */

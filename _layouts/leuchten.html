@@ -1,62 +1,24 @@
 {% include html_start.html %}
 
-    <!--<div class="container-fluid banner-small">
-        <h1>Meine {{site.title_leuchten}}</h1>
-    </div>-->
-
     <div class="referenz-spacer"></div>
 
     <div class="container">
-        <h1>Meine {{site.title_leuchten}}</h1>
-        <p>Hier sehen Sie eine Auswahl von Leuchten, die meiner Ansicht nach Meilensteine des Lichtdesigns darstellen.
-        </p>
+        {{content}}
     </div>
 
     <div id="leuchten-flexbox">
-        <div>
-            <h3>One From The Heart<span>, 1989</span></h3>
-            <p>Tischleuchte</p>
-            <p>Innovative Leuchte mit Touchdimmer für Bedienungskomfort.</p>
-            <a href="https://google.de" target="_blank" class="btn btn-default">Herstellerlink</a>
-        </div>
 
-        <div>
-            <h3>Morning Glory<span>, 1994</span></h3>
-            <p>Stehleuchte</p>
-            <p>Leuchte mit nicht brennbarem, organischem Schirm für atmosphärisches Licht.</p>
-            <a href="https://google.de" target="_blank" class="btn btn-default">Herstellerlink</a>
-        </div>
+        {% for el in site.data.lieblingsleuchten %}
 
-        <div>
-            <h3>Sento<span>, 2002</span></h3>
-            <p>Wandleuchte</p>
-            <p>Wegbereitende Leuchte mit Farbfiltern für akzentuierendes Licht (heute in LED Version).</p>
-            <a href="https://google.de" target="_blank" class="btn btn-default">Herstellerlink</a>
-        </div>
+            <div>
+                <h3>{{el.name}}<span>, {{el.datum}}</span></h3>
+                <p>{{el.leuchtentyp}}</p>
+                <p>{{el.beschreibung}}</p>
+                <a href="{{el.herstellerlink}}" target="_blank" class="btn btn-default">Herstellerlink</a>
+            </div>
 
-        <div>
-            <h3>Break<span>, 2006</span></h3>
-            <p>Outdoorleuchte</p>
-            <p>Außergewöhnliche Leuchte in Beton-Optik, wie eine Bauhausskulptur.<br></p>
-            <a href="https://google.de" target="_blank" class="btn btn-default">Herstellerlink</a>
-        </div>
-
-        <div>
-            <h3>38-28<span>, 2008</span></h3>
-            <p>Hängeleuchte</p>
-            <p>Leuchte mit Bepflanzung zum nachhaltigen Wohnen.</p>
-            <a href="https://google.de" target="_blank" class="btn btn-default">Herstellerlink</a>
-        </div>
-
-        <div>
-            <h3>Flex<span>, 2016</span></h3>
-            <p>Stehleuchte</p>
-            <p>Neuartige Leuchte mit Akku für multilokalen Einsatz.</p>
-            <a href="https://google.de" target="_blank" class="btn btn-default">Herstellerlink</a>
-        </div>
+        {% endfor %}
 
     </div>
-
-    <!-- {% include pagecontent.html %} -->
 
 {% include html_end.html %}

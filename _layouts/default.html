@@ -8,34 +8,17 @@
         <img id="landing-arrow-down" onclick="scrollToElementMain($('#landing-main'))" src="assets/icons/down-arrow.svg">
     </div>
 
-    <!-- <div class="container-fluid banner-small">
-        <div id="main-quote">
-            <p>
-                <span>"Komm einen Atemzug näher ans Licht,</span><br>
-                <span>Schwester,</span><br>
-                <span>Sei kühn und unnahbar"</span><br>
-                <span>- Rose Ausländer (1901 - 1988)</span>
-            </p>
-        </div>
-    </div> -->
-
     <div id="landing-main" class="maintext-content">
         <div class="container">
             <div class="col-md-4">
                 <div id="main-text-left">
-                    <img width="200" src="assets/portrait-rund.jpg" alt="Portrait">
+                    <img width="200" src="{{page.portrait_image}}" alt="Portrait">
                 </div>
             </div>
 
             <div class="col-md-7">
                 <div id="main-text-right">
-                    <h3>Lust auf eine Reise ins Licht?</h3>
-                    <p>Frei nach dem Design Motto <i>form follows function</i> und
-                        der Eigenkreation <i>weniger ist mehr, dimmen ist alles</i> nehme ich sie mit
-                        auf eine gemeinsame Reise, an deren Ende ihre Räume in schönem,
-                        dekorativem und funktionellem Licht erleuchtet sind.
-                        <br><a href="lichtplanung.html">Mehr erfahren...</a>
-                    </p>
+                    {{content}}
                 </div>
             </div>
 

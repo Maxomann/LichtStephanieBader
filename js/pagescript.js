@@ -1,3 +1,6 @@
+---
+---
+
 function changeImgSize(){
     var img = this.content.find('img');
     img.css('max-height', window.innerHeight);
@@ -11,31 +14,19 @@ $( document ).ready(function() {
 
     $('#landing-overlay').css('height', (window.innerHeight-51).toString()+'px');
 
-    // Example with multiple objects
-    $('#ref0').magnificPopup({
+    {% for elJekyll in site.data.referenzen %}
+
+    $('#referenz-element{{ forloop.index }}').magnificPopup({
         disableOn: 0,
         items: [
-            {
-              src: 'assets/referenz/villa_0.jpg'
-            },
-            {
-              src: 'assets/referenz/villa_1.jpg'
-            },
-            {
-              src: 'assets/referenz/villa_2.jpg'
-            },
-            {
-              src: 'assets/referenz/villa_3.jpg'
-            },
-            {
-              src: 'assets/referenz/villa_4.jpg'
-            },
-            {
-              src: 'assets/referenz/villa_5.jpg'
-            },
-            {
-              src: 'assets/referenz/villa_6.jpg'
-            }
+            {% for imageJekyll in elJekyll.bilder %}
+                {
+                src: '{{imageJekyll}}'
+                }        
+                {% if forloop.last != true %}
+                ,
+                {% endif %}
+            {% endfor %}
         ],
         gallery: {
           enabled: true,
@@ -48,90 +39,8 @@ $( document ).ready(function() {
         },
         type: 'image' // this is default type
     });
-    $('#ref1').magnificPopup({
-        disableOn: 0,
-        items: [
-            {
-              src: 'assets/referenz/praxis_0.jpg'
-            },
-            {
-              src: 'assets/referenz/praxis_1.jpg'
-            },
-            {
-              src: 'assets/referenz/praxis_2.jpg'
-            },
-            {
-              src: 'assets/referenz/praxis_3.jpg'
-            },
-            {
-              src: 'assets/referenz/praxis_4.jpg'
-            },
-            {
-              src: 'assets/referenz/praxis_5.jpg'
-            }
-        ],
-        gallery: {
-          enabled: true,
-          preload: [1,2]
-        },
-        callbacks: {
-            resize: changeImgSize,
-            imageLoadComplete:changeImgSize,
-            change:changeImgSize
-        },
-        type: 'image' // this is default type
-    });
-    $('#ref2').magnificPopup({
-        disableOn: 0,
-        items: [
-            {
-              src: 'assets/referenz/esszimmer_0.jpg'
-            },
-            {
-              src: 'assets/referenz/esszimmer_1.jpg'
-            }
-        ],
-        gallery: {
-          enabled: true,
-          preload: [1,2]
-        },
-        callbacks: {
-            resize: changeImgSize,
-            imageLoadComplete:changeImgSize,
-            change:changeImgSize
-        },
-        type: 'image' // this is default type
-    });
-    $('#ref3').magnificPopup({
-        disableOn: 0,
-        items: [
-            {
-              src: 'assets/referenz/niendorf_0.jpg'
-            },
-            {
-              src: 'assets/referenz/niendorf_1.jpg'
-            },
-            {
-              src: 'assets/referenz/niendorf_2.jpg'
-            },
-            {
-              src: 'assets/referenz/niendorf_3.jpg'
-            },
-            {
-              src: 'assets/referenz/niendorf_4.jpg'
-            }
-        ],
-        gallery: {
-          enabled: true,
-          preload: [1,2]
-        },
-        callbacks: {
-            resize: changeImgSize,
-            imageLoadComplete:changeImgSize,
-            change:changeImgSize
-        },
-        type: 'image' // this is default type
-    });
+
+    {% endfor %}
 });
 
 function scrollToElementMain(element){
