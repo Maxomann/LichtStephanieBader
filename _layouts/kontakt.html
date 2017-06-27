@@ -11,7 +11,7 @@
                 </p>
             </div>
             <div class="col-md-6">
-                <form id="contact-form">
+                <form id="contact-form" action="mail.php" method="POST">
                     <fieldset>
                         <legend>Kontaktformular</legend>
                         <div class="form-group">
@@ -25,16 +25,17 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="tel">Telefon</label><br>
+                            <label for="tel">Telefon (Optional)</label><br>
                             <input class="form-control" type="text" name="tel" placeholder="+49 40 123456"><br>
                         </div>
 
                         <div class="form-group">
                             <label for="nachricht">Nachricht<span class="redstar">*</span></label><br>
-                            <textarea class="form-control" type="text" name="nachricht" placeholder="Hier schreiben..." required></textarea><br>
+                            <textarea class="form-control" type="text" name="message" placeholder="Hier schreiben..." required></textarea><br>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Senden</button>
+                        <button type="submit" value="Send" class="btn btn-primary">Senden</button>
+                        <button type="reset" value="Clear" class="btn btn-warning">Reset</button>
                     </fieldset>
                 </form>
             </div>
