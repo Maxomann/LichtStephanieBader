@@ -1,0 +1,17 @@
+Änderungen vornehmen:
+	Referenzen oder Lieblingsleuchten hizufügen/ändern:
+		Die entsprechende .yml Datei im _data Ordner ändern
+	Texte bearbeiten:
+		Die entsprechende .md Datei im Hauptordner ändern
+		Texte Formatieren mit Markdown:
+			http://texwelt.de/wissen/markdown_help/ (Deutsch)
+			https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet (Englisch)
+
+Änderungen vor dem hochladen überprüfen:
+	jekyll_run ausführen
+	http://localhost:4000 aufrufen
+
+Änderungen hochladen:
+	jekyll_build ausführen
+	Den Inhalt des _site Ordners in das Hauptverzeichnis des Servers kopieren. Dazu kann FileZilla benutzt werden.
+	Erklärung zum Hochladen: https://www.strato.de/faq/article/205/Dateien-per-FTP-hochladen---welche-Einstellungen-sind-n%C3%B6tig.html

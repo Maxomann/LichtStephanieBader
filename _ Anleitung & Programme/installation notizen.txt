@@ -1,0 +1,7 @@
+Benötigt:
+	Ruby
+	Ruby SDK
+
+Im Hauptverzeichnis LichtStephanieBader ausführen:
+	gem install bundler
+	bundle install
